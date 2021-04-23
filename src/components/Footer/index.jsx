@@ -40,9 +40,7 @@ const Footer = () =>{
 
   return(
     <Grid container spacing={3}>
-      <Grid item xs={1}>
-        <h1>blank</h1>
-      </Grid>
+      <Grid item xs={1}></Grid>
       <Grid item xs={10} className={classes.footer}>
         <div className={classes.section1}>
           <h1>Get Fintech App</h1>
@@ -56,9 +54,7 @@ const Footer = () =>{
           <img src={MobileImage} />
         </div>    
       </Grid>
-      <Grid item xs={1}>
-        <h1>blank</h1>
-      </Grid>
+      <Grid item xs={1}></Grid>
     </Grid>
   )
 }
