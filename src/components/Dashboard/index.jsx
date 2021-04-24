@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   body:{
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     margin: '1rem',
     padding: '1rem'
   },
