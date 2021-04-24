@@ -32,6 +32,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${Corner})`,
     backgroundPosition: 'right',
     backgroundRepeat: 'no-repeat',
+    borderRadius: '8px'
+  },
+  copyright:{
+    float: 'left',
+    fontSize: '13px',
+  },
+  legal:{
+    float: 'right',
+    fontSize: '13px',
   },
 }));
 
@@ -39,7 +48,7 @@ const Footer = () =>{
   const classes = useStyles();
 
   return(
-    <Grid container spacing={3}>
+    <Grid container>
       <Grid item xs={1}></Grid>
       <Grid item xs={10} className={classes.footer}>
         <div className={classes.section1}>
@@ -53,6 +62,14 @@ const Footer = () =>{
         <div className={classes.section2}>
           <img src={MobileImage} />
         </div>    
+      </Grid>
+      <Grid item xs={1}></Grid>
+      <Grid item xs={1}></Grid>
+      <Grid item xs={9}>
+        <p className={classes.copyright}>Copyright © 2017 - 2020 Fintech Pte. Ltd. All rights reserved.</p>
+      </Grid>
+      <Grid item xs={1}>
+        <p className={classes.legal}>Legal | Privacy</p>
       </Grid>
       <Grid item xs={1}></Grid>
     </Grid>

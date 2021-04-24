@@ -1,10 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 //Components
 import NavBar from '../NavigationBar'
 import Breadcrumb from '../Breadcrumbs'
 import CardList from '../Card/CardList'
 import Action from '../Action'
+import Activity from '../Activity'
 import Footer from '../Footer'
 
 const useStyles = makeStyles((theme) => ({
@@ -13,7 +15,11 @@ const useStyles = makeStyles((theme) => ({
   },
   body:{
     display: 'flex',
-  }
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '1rem',
+    padding: '1rem'
+  },
 }));
 
 const Dashboard = () =>{
@@ -24,9 +30,14 @@ const Dashboard = () =>{
       <NavBar />
       <Breadcrumb />
       <CardList />
-      <div className={classes.body}>
-        <Action />
-      </div>
+      <Grid container className={classes.body}>
+        <Grid xs={4}>
+          <Action />
+        </Grid>
+        <Grid xs={8}>
+          <Activity />
+        </Grid>
+      </Grid>
       <Footer />
     </>
   )

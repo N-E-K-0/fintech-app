@@ -9,20 +9,25 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems:'center',
     flexDirection: 'column',
-    backgroundColor: '#525198',
     border: '1px solid #E9EFFF',
     borderRadius: '8px',
+    color:'white',
+    margin:'0.5rem',
+    padding: '0.5rem'
   }
 }));
 
 const Button = (props) =>{
   const classes = useStyles();
-  const { icon, text } = props;
+  const { icon, text, color } = props;
 
   return(
-    <div className={classes.button}>
+    <div 
+      className={classes.button} 
+      style={{backgroundColor: `${color}`}}
+    >
       <img src={icon} />
-      <h4>{text}</h4>
+      <p>{text}</p>
     </div>  
   )
 }

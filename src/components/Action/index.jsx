@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 
 //Components
 import Button from './button'
@@ -11,34 +12,51 @@ import Withdraw from '../../assets/withdraw.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
     display: 'flex',  
     flexWrap: 'wrap',
   },
+  header:{
+    display:'flex',
+    justifyContent: 'flex-start'
+  }
 }));
 
 const Action = () =>{
   const classes = useStyles();
 
+  const violetColor = '#525198'
+  const yellowColor = '#F1B31C'
+
   return(
-    <div className={classes.root}>
-      <Button 
-        icon={Pay} 
-        text="Pay" 
-      />
-      <Button 
-        icon={Request} 
-        text="Request" 
-      />
-      <Button 
-        icon={TopUp} 
-        text="TopUp" 
-      />
-      <Button 
-        icon={Withdraw} 
-        text="Withdraw" 
-      />
-    </div>
+    <>
+      <h1 className={classes.header}>Action</h1>
+      <Grid container className={classes.root}>
+        <Grid xs={5}>
+          <Button 
+            icon={Pay} 
+            text="Pay"
+            color={violetColor} 
+          />
+          <Button 
+            icon={Request} 
+            text="Request"
+            color={violetColor}  
+          />
+        </Grid>
+        <Grid xs={5}>
+          <Button 
+            icon={TopUp} 
+            text="TopUp" 
+            color={violetColor} 
+          />
+          <Button 
+            icon={Withdraw} 
+            text="Withdraw" 
+            color={yellowColor} 
+          />
+        </Grid>
+      </Grid>
+    </>
   )
 }
 
