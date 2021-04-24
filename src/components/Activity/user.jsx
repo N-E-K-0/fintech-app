@@ -6,11 +6,15 @@ import AvatarImage from '../../assets/Avatar.png';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex', 
-    margin: '1rem' 
   },
   userInfo:{
-    display: 'flex',  
-    justifyContent: 'flex-start',
+    textAlign:'left'
+  },
+  image:{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '1rem'
   }
 }));
 
@@ -19,11 +23,11 @@ const User = () =>{
 
   return(
     <Grid container className={classes.root}>
-      <Grid xs={1}>
+      <Grid xs={1} className={classes.image}>
         <img src={AvatarImage} />
       </Grid>
-      <Grid xs={9} className={classes.userInfo}>
-        <h5>Status: Dollar balance</h5>
+      <Grid xs={8} className={classes.userInfo}>
+        <h3>Status: Dollar balance</h3>
         <p>To: John doe, john@gmail.com</p>
       </Grid>
       <Grid xs={2}>

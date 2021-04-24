@@ -1,4 +1,5 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -7,6 +8,9 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+
+//Components
+import User from './user'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,8 +48,13 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 500,
+    width: 'auto',
   },
+  date:{
+    display: 'flex',
+    justifyContent: 'flex-start',
+    margin: '1rem' 
+  }
 }));
 
 export default function FullWidthTabs() {
@@ -61,6 +70,8 @@ export default function FullWidthTabs() {
     setValue(index);
   };
 
+  const date = "15 January, 2021"
+
   return (
     <div className={classes.root}>
       <AppBar position="static" color="default">
@@ -72,8 +83,8 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
+          <Tab label="Recent" {...a11yProps(0)} />
+          <Tab label="Pending" {...a11yProps(1)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -82,10 +93,28 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
+          <Grid container>
+            <Grid xs={12} className={classes.date}>
+              {date}
+            </Grid>
+            <Grid xs={12}>
+              <User />
+              <User />
+              <User />
+              <User />
+            </Grid>
+          </Grid>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+          <Grid container>
+              <Grid xs={12} className={classes.date}>
+                {date}
+              </Grid>
+              <Grid xs={12}>
+                <User />
+                <User />
+              </Grid>
+            </Grid>
         </TabPanel>
       </SwipeableViews>
     </div>

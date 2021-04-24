@@ -3,7 +3,6 @@ import Grid from '@material-ui/core/Grid';
 
 //Components
 import TabPanel from './tabPanel'
-import User from './user'
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -16,17 +15,11 @@ const useStyles = makeStyles((theme) => ({
     display:'flex',
     justifyContent: 'flex-start'
   },
-  date:{
-    display: 'flex',
-    justifyContent: 'flex-start',
-    margin: '1rem' 
-  }
 }));
 
 const Activity = (props) =>{
   const classes = useStyles();
   const { children, value, index, ...other } = props;
-  const date = "15 January, 2021"
 
   const userData ={
     name: "Moohan",
@@ -43,15 +36,6 @@ const Activity = (props) =>{
         </Grid>
         <Grid xs={2}>
           <a href='#'>View all</a>
-        </Grid>
-        <Grid xs={12} className={classes.date}>
-          {date}
-        </Grid>
-        <Grid xs={12}>
-          <User />
-          <User />
-          <User />
-          <User />
         </Grid>
       </Grid>
     </>
