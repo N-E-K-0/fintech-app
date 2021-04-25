@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/fintech-app/static/css/main.79b23ab1.chunk.css",
+    "main.js": "/fintech-app/static/js/main.ac5733a8.chunk.js",
+    "main.js.map": "/fintech-app/static/js/main.ac5733a8.chunk.js.map",
+    "runtime-main.js": "/fintech-app/static/js/runtime-main.6e48066b.js",
+    "runtime-main.js.map": "/fintech-app/static/js/runtime-main.6e48066b.js.map",
+    "static/js/2.3a2cd21c.chunk.js": "/fintech-app/static/js/2.3a2cd21c.chunk.js",
+    "static/js/2.3a2cd21c.chunk.js.map": "/fintech-app/static/js/2.3a2cd21c.chunk.js.map",
+    "static/js/3.2d224518.chunk.js": "/fintech-app/static/js/3.2d224518.chunk.js",
+    "static/js/3.2d224518.chunk.js.map": "/fintech-app/static/js/3.2d224518.chunk.js.map",
+    "index.html": "/fintech-app/index.html",
+    "static/css/main.79b23ab1.chunk.css.map": "/fintech-app/static/css/main.79b23ab1.chunk.css.map",
+    "static/js/2.3a2cd21c.chunk.js.LICENSE.txt": "/fintech-app/static/js/2.3a2cd21c.chunk.js.LICENSE.txt",
+    "static/media/Corner.95d02aeb.png": "/fintech-app/static/media/Corner.95d02aeb.png",
+    "static/media/Flag.ae6d96ef.svg": "/fintech-app/static/media/Flag.ae6d96ef.svg",
+    "static/media/mobile.f481ab6b.png": "/fintech-app/static/media/mobile.f481ab6b.png",
+    "static/media/top-bg.13638306.png": "/fintech-app/static/media/top-bg.13638306.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e48066b.js",
+    "static/js/2.3a2cd21c.chunk.js",
+    "static/css/main.79b23ab1.chunk.css",
+    "static/js/main.ac5733a8.chunk.js"
+  ]
+}
