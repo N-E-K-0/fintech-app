@@ -9,11 +9,17 @@ import Action from '../Action'
 import Activity from '../Activity'
 import Footer from '../Footer'
 
+import Banner from '../../assets/top-bg.png'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  body:{
+  upperBody:{
+    backgroundImage: `url(${Banner})`,
+    backgroundRepeat: 'no-repeat',
+  },
+  lowerBody:{
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'flex-start',
@@ -27,10 +33,12 @@ const Dashboard = () =>{
 
   return(
     <>
-      <NavBar />
-      <Breadcrumb />
-      <CardList />
-      <Grid container className={classes.body}>
+      <Grid container className={classes.upperBody}>
+        <Grid xs={12}><NavBar /></Grid>
+        <Grid xs={12}><Breadcrumb /></Grid>
+        <Grid xs={12}><CardList /></Grid>
+      </Grid>
+      <Grid container className={classes.lowerBody}>
         <Grid xs={4}>
           <Action />
         </Grid>

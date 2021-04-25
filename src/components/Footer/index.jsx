@@ -49,8 +49,7 @@ const Footer = () =>{
 
   return(
     <Grid container>
-      <Grid item xs={1}></Grid>
-      <Grid item xs={10} className={classes.footer}>
+      <Grid item xs={12} className={classes.footer}>
         <div className={classes.section1}>
           <h1>Get Fintech App</h1>
           <p>Available on</p>
@@ -63,15 +62,12 @@ const Footer = () =>{
           <img src={MobileImage} />
         </div>    
       </Grid>
-      <Grid item xs={1}></Grid>
-      <Grid item xs={1}></Grid>
-      <Grid item xs={9}>
+      <Grid item xs={11}>
         <p className={classes.copyright}>Copyright © 2017 - 2020 Fintech Pte. Ltd. All rights reserved.</p>
       </Grid>
       <Grid item xs={1}>
         <p className={classes.legal}>Legal | Privacy</p>
       </Grid>
-      <Grid item xs={1}></Grid>
     </Grid>
   )
 }
