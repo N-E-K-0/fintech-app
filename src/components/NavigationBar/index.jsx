@@ -10,9 +10,8 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 //Images
-import AvatarImage from '../../assets/Avatar.png';
-import Flag from '../../assets/Flag.svg';
-// import BellIcon from '../../assets/'
+import AvatarImage from '../../assets/images/Avatar.png';
+import Flag from '../../assets/images/Flag.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -64,14 +63,14 @@ const NavBar = () =>{
   };
 
   return(
-    <Grid xs={12} className={classes.root}>
+    <Grid item xs={12} className={classes.root}>
       <Toolbar>
-        <Grid xs={2}>
+        <Grid item xs={2}>
           <Typography className={classes.title} variant="h6" noWrap>
             Fintech App
           </Typography>
         </Grid>
-        <Grid xs={8}>
+        <Grid item xs={8}>
           <Tabs
             value={value}
             indicatorColor="#ede7f6"
@@ -84,7 +83,7 @@ const NavBar = () =>{
             <Tab label="QR Codes" className={classes.tab}/>
           </Tabs>
         </Grid>
-        <Grid xs={2} className={classes.sectionDesktop}>
+        <Grid item xs={2} className={classes.sectionDesktop}>
           <IconButton aria-label="show 17 new notifications" color="inherit">
             <Badge>
               <NotificationsNoneIcon 

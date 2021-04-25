@@ -1,0 +1,56 @@
+{
+  "1":{ 
+    "id": 1,
+    "type": "primary",
+    "name": "John Smith",
+    "email": "john@email.com",
+    "dollarBalance": " 5000.00",
+    "balance": "2780.00",
+    "date": "15 january"
+  },
+  "2":{ 
+    "id": 2,
+    "type": "primary",
+    "name": "Edward ken",
+    "email": "ken@email.com",
+    "dollarBalance": " 5000.00",
+    "balance": "3500.00",
+    "date": "15 january"
+  },
+  "3":{ 
+    "id": 3,
+    "type": "primary",
+    "name": "Justin Whale",
+    "email": "justin@email.com",
+    "dollarBalance": " 5000.00",
+    "balance": "1580.00",
+    "date": "15 january"
+  },
+  "4":{ 
+    "id": 4,
+    "type": "primary",
+    "name": "Alice Kalie",
+    "email": "alice@email.com",
+    "dollarBalance": " 5000.00",
+    "balance": "3240.00",
+    "date": "15 january"
+  },
+  "5":{ 
+    "id": 5,
+    "type": "primary",
+    "name": "Maya Johnson",
+    "email": "maya@email.com",
+    "dollarBalance": " 5000.00",
+    "balance": "2220.00",
+    "date": "13 january"
+  },
+  "6":{ 
+    "id": 6,
+    "type": "primary",
+    "name": "Wonder boy",
+    "email": "boy@email.com",
+    "dollarBalance": " 5000.00",
+    "balance": "3900.00",
+    "date": "13 january"
+  }
+}

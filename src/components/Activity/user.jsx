@@ -1,7 +1,8 @@
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import AvatarImage from '../../assets/Avatar.png';
+//Images
+import AvatarImage from '../../assets/images/Avatar.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,24 +16,31 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     padding: '1rem'
+  },
+  btn:{
+    backgroundColor:'white',
+    color: '#114B39',
+    border: '1px solid #114B39',
+    borderRadius: '4px'
   }
 }));
 
-const User = () =>{
+const User = (props) =>{
   const classes = useStyles();
+  const { name, email, balance } = props;
 
   return(
     <Grid container className={classes.root}>
-      <Grid xs={1} className={classes.image}>
+      <Grid item xs={1} className={classes.image}>
         <img src={AvatarImage} />
       </Grid>
-      <Grid xs={8} className={classes.userInfo}>
-        <h3>Status: Dollar balance</h3>
-        <p>To: John doe, john@gmail.com</p>
+      <Grid item xs={8} className={classes.userInfo}>
+        <h3> Dollar balance</h3>
+        <p>To: {name}, {email}</p>
       </Grid>
-      <Grid xs={2}>
-        <h3>+1759.00</h3>
-        <button>Approved</button>
+      <Grid item xs={2}>
+        <h3>+{balance}</h3>
+        <button className={classes.btn}>Approved</button>
       </Grid>
     </Grid>  
   )

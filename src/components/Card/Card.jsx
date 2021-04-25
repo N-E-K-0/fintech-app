@@ -3,7 +3,9 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import QRImage from '../../assets/QR.png'
+
+//Images
+import QRImage from '../../assets/images/QR.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,22 +27,25 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SingleCard() {
+export default function SingleCard(props) {
   const classes = useStyles();
-  const theme = useTheme();
+  const { balanceType, type, balance } = props
 
   return (
     <Card className={classes.root}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            Dollar Balance
+            {balanceType}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
+            {type}
+          </Typography>
+          <Typography variant="subtitle2" color="textSecondary">
             Available Balance
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            $2700,00
+          <Typography component="h5" variant="h5" >
+            ${balance}
           </Typography>
         </CardContent>
       </div>

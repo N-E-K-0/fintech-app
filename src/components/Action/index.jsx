@@ -5,10 +5,10 @@ import Grid from '@material-ui/core/Grid';
 import Button from './button'
 
 //icons
-import Pay from '../../assets/pay.png'
-import Request from '../../assets/request.png'
-import TopUp from '../../assets/top-up.png'
-import Withdraw from '../../assets/withdraw.png'
+import Pay from '../../assets/images/pay.png'
+import Request from '../../assets/images/request.png'
+import TopUp from '../../assets/images/top-up.png'
+import Withdraw from '../../assets/images/withdraw.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,7 +31,7 @@ const Action = () =>{
     <>
       <h1 className={classes.header}>Action</h1>
       <Grid container className={classes.root}>
-        <Grid xs={5}>
+        <Grid item xs={5}>
           <Button 
             icon={Pay} 
             text="Pay"
@@ -43,7 +43,7 @@ const Action = () =>{
             color={violetColor}  
           />
         </Grid>
-        <Grid xs={5}>
+        <Grid item xs={5}>
           <Button 
             icon={TopUp} 
             text="TopUp" 
@@ -55,7 +55,7 @@ const Action = () =>{
             color={yellowColor} 
           />
         </Grid>
-        <Grid xs={2}></Grid>
+        <Grid item xs={2}></Grid>
       </Grid>
     </>
   )

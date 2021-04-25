@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 //Images
-import AppStoreImage from '../../assets/iStore.png'
-import PlayStoreImage from '../../assets/Playstore.png'
-import MobileImage from '../../assets/mobile.png'
-import Corner from '../../assets/Corner.png'
+import AppStoreImage from '../../assets/images/iStore.png'
+import PlayStoreImage from '../../assets/images/Playstore.png'
+import MobileImage from '../../assets/images/mobile.png'
+import Corner from '../../assets/images/Corner.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {

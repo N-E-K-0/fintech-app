@@ -19,22 +19,15 @@ const useStyles = makeStyles((theme) => ({
 
 const Activity = (props) =>{
   const classes = useStyles();
-  const { children, value, index, ...other } = props;
-
-  const userData ={
-    name: "Moohan",
-    email: "mohan@gmail.com",
-    balance: "$1750",
-  }
   
   return(
     <>
       <h1 className={classes.header}>Recent Activity</h1>
       <Grid container className={classes.root}>
-        <Grid xs={10}>
+        <Grid item xs={10}>
           <TabPanel />
         </Grid>
-        <Grid xs={2}>
+        <Grid item xs={2}>
           <a href='#'>View all</a>
         </Grid>
       </Grid>
