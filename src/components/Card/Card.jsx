@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -50,7 +50,7 @@ export default function SingleCard(props) {
         </CardContent>
       </div>
       <div className={classes.qrimage}>
-        <img src={QRImage} />
+        <img src={QRImage} alt="qrImage"/>
       </div>
     </Card>
   );

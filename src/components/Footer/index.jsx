@@ -54,12 +54,12 @@ const Footer = () =>{
           <h1>Get Fintech App</h1>
           <p>Available on</p>
           <div className={classes.section1Inside}>
-            <img src={AppStoreImage} />
-            <img src={PlayStoreImage} />
+            <img src={AppStoreImage} alt="appStore"/>
+            <img src={PlayStoreImage} alt="playStore"/>
           </div>
         </div> 
         <div className={classes.section2}>
-          <img src={MobileImage} />
+          <img src={MobileImage} alt="mobileImage"/>
         </div>    
       </Grid>
       <Grid item xs={11}>

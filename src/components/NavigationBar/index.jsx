@@ -91,8 +91,8 @@ const NavBar = () =>{
               />
             </Badge>
           </IconButton>
-          <img src={Flag} className={classes.flag}/>
-          <img src={AvatarImage} className={classes.avatar}/>
+          <img src={Flag} alt="flag" className={classes.flag}/>
+          <img src={AvatarImage} alt="avatar" className={classes.avatar}/>
         </Grid>
       </Toolbar>
     </Grid>

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Activity = (props) =>{
+const Activity = () =>{
   const classes = useStyles();
   
   return(

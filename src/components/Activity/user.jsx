@@ -32,7 +32,7 @@ const User = (props) =>{
   return(
     <Grid container className={classes.root}>
       <Grid item xs={1} className={classes.image}>
-        <img src={AvatarImage} />
+        <img src={AvatarImage} alt="avatarImage"/>
       </Grid>
       <Grid item xs={8} className={classes.userInfo}>
         <h3> Dollar balance</h3>

@@ -26,7 +26,7 @@ const Button = (props) =>{
       className={classes.button} 
       style={{backgroundColor: `${color}`}}
     >
-      <img src={icon} />
+      <img src={icon} alt="icon"/>
       <p>{text}</p>
     </div>  
   )

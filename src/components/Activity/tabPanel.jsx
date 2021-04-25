@@ -1,13 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Grid from '@material-ui/core/Grid';
-import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import { makeStyles } from '@material-ui/core/styles';
 
 //Components
 import User from './user'
@@ -35,7 +28,6 @@ const TabPanel = () => {
     setDatePosted(Data[1].date)
   },[])
 
-  console.log('data',Object.values(Data))
   return (
     <div className={classes.root}>
       <div item xs={12} className={classes.datecss}>
